@@ -53,7 +53,7 @@ BST_Node* BST_Tree:: delete_Account(BST_Node * root, int accountno)
 		cout << "it seems that Tree is empty OR You have entered wrong data" << endl;
 	else if (accountno < root->account_number)
 		root->left = delete_Account(root->left, accountno);
-	else if (accountno > Root->account_number)
+	else if (accountno > root->account_number)
 		root->right = delete_Account(root->right, accountno);
 	else
 	{
